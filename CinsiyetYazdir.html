@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Cinsiyet Seçimi </title>
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+ 
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("input[type='button']").click(function(){
+         var deger= $("input[name='cinsiyet']:checked").val();
+            if(deger){
+                alert("Cinsiyetiniz: " + deger);
+            }
+        });
+        
+    });
+</script>
+</head> 
+<body>
+    <h4>Cinsiyet Seçiniz</h4>
+    <p> 
+        <label><input type="radio" name="cinsiyet" value="erkek">Erkek</label> 
+        <label><input type="radio" name="cinsiyet" value="kadin">Kadın</label>
+    </p>
+    <p><input type="button" value="Seçileni Göster"></p>
+</body>
+</html>  
